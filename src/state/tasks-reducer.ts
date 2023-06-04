@@ -1,7 +1,11 @@
-import { TasksStateType } from '../App';
-import { v1 } from 'uuid';
-import {AddTodolistActionType, RemoveTodolistActionType, SetTodoListsActionType} from './todolists-reducer';
-import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI} from '../api/todolists-api'
+import {TasksStateType} from '../App';
+import {
+    AddTodolistActionType,
+    changeTodoListsTitleTC,
+    RemoveTodolistActionType,
+    SetTodoListsActionType
+} from './todolists-reducer';
+import {TaskStatuses, TaskType, todolistsAPI} from '../api/todolists-api'
 import {Dispatch} from "redux";
 import {AppRootStateType} from "./store";
 
@@ -200,3 +204,6 @@ export const updateTaskStatusTC = (taskId: string, todolistId: string, status: T
         }
     }
 }
+
+
+
